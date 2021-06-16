@@ -60,7 +60,7 @@ class Ator():
 
 class Obstaculo(Ator):
     _caracter_ativo = 'O'
-    #_caracter_destruido = ' '
+    _caracter_destruido = ' '
 
 
 class Porco(Ator):
@@ -93,7 +93,7 @@ class Passaro(Ator):
 
     def foi_lancado(self):
         """
-        Método que retorna verdaeira se o pássaro já foi lançado e falso caso contrário
+        Método que retorna verdadeira se o pássaro já foi lançado e falso caso contrário
 
         :return: booleano
         """
@@ -138,8 +138,8 @@ class Passaro(Ator):
         :param tempo_de_lancamento:
         :return:
         """
-        # self._angulo_de_lancamento = angulo
-        self._angulo_de_lancamento = math.radians(angulo)
+        self._angulo_de_lancamento = angulo
+        #self._angulo_de_lancamento = math.radians(angulo)
         self._tempo_de_lancamento = tempo_de_lancamento
 
     def _calcular_posicao_vertical(self, delta_t):
